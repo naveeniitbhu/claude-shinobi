@@ -73,3 +73,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Esc twice - choose from prev sessions
 /resume - shows all sessions
 - Context window in claude can handle 200k tokens
+/plan
+1. Can you make a avatar like component(no pic, only initials) and find any places in the project where it can replace avatar like template?

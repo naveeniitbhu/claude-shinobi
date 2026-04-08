@@ -1,6 +1,6 @@
 interface ButtonProps {
   children: React.ReactNode
-  variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'black' | 'white'
+  variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'black' | 'white' | 'orange' | 'white-orange'
   onClick?: () => void
   disabled?: boolean
   type?: 'button' | 'submit' | 'reset'
@@ -24,7 +24,9 @@ function Button({
     warning: 'bg-gradient-to-b from-warning to-warning/80 text-white hover:from-warning/90 hover:to-warning/70 focus:ring-warning/30 border-b-4 border-warning/60',
     danger: 'bg-gradient-to-b from-danger to-danger/80 text-white hover:from-danger/90 hover:to-danger/70 focus:ring-danger/30 border-b-4 border-danger/60',
     black: 'bg-gradient-to-b from-gray-800 to-black text-white hover:from-gray-700 hover:to-gray-900 focus:ring-black/30 border-b-4 border-black',
-    white: 'bg-gradient-to-b from-white to-gray-100 text-black hover:from-gray-50 hover:to-gray-200 focus:ring-white/30 border-b-4 border-gray-300'
+    white: 'bg-gradient-to-b from-white to-gray-100 text-black hover:from-gray-50 hover:to-gray-200 focus:ring-white/30 border-b-4 border-gray-300',
+    orange: 'bg-gradient-to-b from-orange-500 to-orange-600 text-white hover:from-orange-400 hover:to-orange-500 focus:ring-orange-500/30 border-b-4 border-orange-700',
+    'white-orange': 'bg-gradient-to-b from-white to-gray-100 text-orange-500 hover:from-gray-50 hover:to-gray-200 focus:ring-orange-500/30 border-b-4 border-orange-200'
   }
 
   const buttonClass = [
