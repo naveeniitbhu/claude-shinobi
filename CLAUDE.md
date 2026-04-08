@@ -76,3 +76,7 @@ src/
 - when making new page components, always add a link to that page in the header. Only do this for page components, not UI or other drop-in components.
 
 - Use Context7 to check up-to-date docs when needed for implementing new libraries or frameworks, or adding features using them.
+
+## Hooks
+
+- `useLocalStorage` (`src/hooks/useLocalStorage.ts`) — stores and retrieves data in the browser's localStorage. Use this whenever a component needs to persist state between sessions.

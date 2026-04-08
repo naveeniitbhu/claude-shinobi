@@ -65,3 +65,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - More areas to specialize - MCP, Agentic tools, Custom integrations, etc
 - There will still be a demand for good programmers.
 - Learning to code is more important than ever!
+
+### Important commands
+
+/clear - clears whole session
+/compact - compact the sessino
+Esc twice - choose from prev sessions
+/resume - shows all sessions
+- Context window in claude can handle 200k tokens
