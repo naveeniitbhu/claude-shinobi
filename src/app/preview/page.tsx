@@ -5,12 +5,14 @@ import Avatar from "@/components/ui/Avatar/Avatar";
 import Card from "@/components/ui/Card/Card";
 import Icon from "@/components/ui/Icon/Icon";
 import Modal from "@/components/ui/Modal/Modal";
+import Alert from "@/components/ui/Alert/Alert";
 import { Star, Rocket, Gem, Target, Zap, Check, AlertTriangle, Flame, Home, Settings, ThumbsUp, Bell, Trash2, FileText, Camera, Paperclip, BarChart3, Link2, Circle } from "lucide-react";
 
 export default function Preview() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalVariant, setModalVariant] = useState<'primary' | 'secondary' | 'success' | 'danger' | 'warning'>('primary');
   const [modalSize, setModalSize] = useState<'sm' | 'md' | 'lg'>('md');
+  const [dismissedAlerts, setDismissedAlerts] = useState<Set<string>>(new Set());
 
   const openModal = (variant: typeof modalVariant, size: typeof modalSize = 'md') => {
     setModalVariant(variant);
@@ -496,6 +498,61 @@ export default function Preview() {
           </div>
         </div>
       </Modal>
+
+      <section style={{ marginTop: '3rem', width: '100%', maxWidth: '700px' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Alert Component</h2>
+        <p style={{ marginBottom: '1.5rem', maxWidth: '500px' }}>
+          Informational banners for feedback messages with optional titles and dismiss functionality.
+        </p>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Variants</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          <Alert variant="primary">This is a <strong>primary</strong> alert — general information.</Alert>
+          <Alert variant="secondary">This is a <strong>secondary</strong> alert — neutral message.</Alert>
+          <Alert variant="success">This is a <strong>success</strong> alert — action completed.</Alert>
+          <Alert variant="warning">This is a <strong>warning</strong> alert — proceed with caution.</Alert>
+          <Alert variant="danger">This is a <strong>danger</strong> alert — critical issue.</Alert>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>With Titles</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          <Alert variant="success" title="Success">Your changes have been saved successfully.</Alert>
+          <Alert variant="warning" title="Warning">Your session is about to expire in 5 minutes.</Alert>
+          <Alert variant="danger" title="Error">Failed to connect to the server. Please try again.</Alert>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Sizes</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          <Alert variant="primary" size="sm">Small alert — compact for tight spaces.</Alert>
+          <Alert variant="primary" size="md">Medium alert — default size for most use cases.</Alert>
+          <Alert variant="primary" size="lg">Large alert — prominent for important messages.</Alert>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Dismissible</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+          {(['primary', 'success', 'warning', 'danger'] as const).map((v) =>
+            !dismissedAlerts.has(v) && (
+              <Alert
+                key={v}
+                variant={v}
+                title={v.charAt(0).toUpperCase() + v.slice(1)}
+                dismissible
+                onDismiss={() => setDismissedAlerts(prev => new Set([...prev, v]))}
+              >
+                This dismissible {v} alert can be closed.
+              </Alert>
+            )
+          )}
+          {dismissedAlerts.size > 0 && (
+            <button
+              onClick={() => setDismissedAlerts(new Set())}
+              style={{ alignSelf: 'flex-start', fontSize: '0.85rem', color: 'var(--muted)', cursor: 'pointer', background: 'none', border: 'none', padding: 0 }}
+            >
+              Reset dismissed alerts
+            </button>
+          )}
+        </div>
+      </section>
 
       <section style={{ marginTop: '3rem' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Typography Hierarchy</h2>
