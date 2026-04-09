@@ -7,13 +7,39 @@ import Icon from "@/components/ui/Icon/Icon";
 import Modal from "@/components/ui/Modal/Modal";
 import Alert from "@/components/ui/Alert/Alert";
 import Badge from "@/components/ui/Badge/Badge";
+import Toast, { ToastVariant, ToastSize } from "@/components/ui/Toast/Toast";
 import { Star, Rocket, Gem, Target, Zap, Check, AlertTriangle, Flame, Home, Settings, ThumbsUp, Bell, Trash2, FileText, Camera, Paperclip, BarChart3, Link2, Circle } from "lucide-react";
+
+interface ActiveToast {
+  id: string;
+  variant: ToastVariant;
+  size: ToastSize;
+  title?: string;
+  message: string;
+}
 
 export default function Preview() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalVariant, setModalVariant] = useState<'primary' | 'secondary' | 'success' | 'danger' | 'warning'>('primary');
   const [modalSize, setModalSize] = useState<'sm' | 'md' | 'lg'>('md');
   const [dismissedAlerts, setDismissedAlerts] = useState<Set<string>>(new Set());
+  const [activeToasts, setActiveToasts] = useState<ActiveToast[]>([]);
+
+  const showToast = (variant: ToastVariant, size: ToastSize = 'md', title?: string, message?: string) => {
+    const id = `${Date.now()}-${Math.random()}`;
+    const defaultMessages: Record<ToastVariant, string> = {
+      primary: 'This is a primary notification.',
+      secondary: 'This is a secondary notification.',
+      success: 'Your changes have been saved successfully.',
+      danger: 'Something went wrong. Please try again.',
+      warning: 'Please review before continuing.',
+    };
+    setActiveToasts(prev => [...prev, { id, variant, size, title, message: message ?? defaultMessages[variant] }]);
+  };
+
+  const dismissToast = (id: string) => {
+    setActiveToasts(prev => prev.filter(t => t.id !== id));
+  };
 
   const openModal = (variant: typeof modalVariant, size: typeof modalSize = 'md') => {
     setModalVariant(variant);
@@ -635,6 +661,51 @@ export default function Preview() {
           </div>
         </div>
       </section>
+
+      <section style={{ marginTop: '3rem' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Toast Component</h2>
+        <p style={{ marginBottom: '1.5rem', maxWidth: '500px' }}>
+          Lightweight notifications that appear in the corner of the screen with auto-dismiss and multiple variants.
+        </p>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Variants</h3>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          <Button variant="primary" onClick={() => showToast('primary', 'md', 'Info')}>Primary Toast</Button>
+          <Button variant="secondary" onClick={() => showToast('secondary', 'md', 'Notice')}>Secondary Toast</Button>
+          <Button variant="success" onClick={() => showToast('success', 'md', 'Success')}>Success Toast</Button>
+          <Button variant="danger" onClick={() => showToast('danger', 'md', 'Error')}>Danger Toast</Button>
+          <Button variant="warning" onClick={() => showToast('warning', 'md', 'Warning')}>Warning Toast</Button>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Sizes</h3>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          <Button variant="primary" onClick={() => showToast('primary', 'sm', undefined, 'Small toast notification.')}>Small</Button>
+          <Button variant="primary" onClick={() => showToast('primary', 'md', undefined, 'Medium toast notification.')}>Medium</Button>
+          <Button variant="primary" onClick={() => showToast('primary', 'lg', undefined, 'Large toast notification with more space for content.')}>Large</Button>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Without Title</h3>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          <Button variant="success" onClick={() => showToast('success', 'md', undefined, 'File uploaded successfully.')}>Success (no title)</Button>
+          <Button variant="danger" onClick={() => showToast('danger', 'md', undefined, 'Connection timed out.')}>Danger (no title)</Button>
+          <Button variant="warning" onClick={() => showToast('warning', 'md', undefined, 'Low disk space remaining.')}>Warning (no title)</Button>
+        </div>
+      </section>
+
+      {/* Fixed toast container */}
+      <div style={{ position: 'fixed', bottom: '1.5rem', right: '1.5rem', left: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', zIndex: 9999, pointerEvents: 'none', alignItems: 'flex-end' }}>
+        {activeToasts.map(toast => (
+          <div key={toast.id} style={{ pointerEvents: 'auto' }}>
+            <Toast
+              variant={toast.variant}
+              size={toast.size}
+              title={toast.title}
+              message={toast.message}
+              onDismiss={() => dismissToast(toast.id)}
+            />
+          </div>
+        ))}
+      </div>
 
       <section style={{ marginTop: '3rem' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Typography Hierarchy</h2>
