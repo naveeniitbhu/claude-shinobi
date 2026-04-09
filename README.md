@@ -72,6 +72,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 /compact - compact the sessino
 Esc twice - choose from prev sessions
 /resume - shows all sessions
+
 - Context window in claude can handle 200k tokens
-/plan
+  /plan
+
 1. Can you make a avatar like component(no pic, only initials) and find any places in the project where it can replace avatar like template?
+
+### MCP Servers
+
+MCP servers help AI model connect to external sources.
+For example: Supabase MCP would allow Claude to read blogs table in supabase, make an interface to model the records. The supabase server would provide the ability to claude to call those tools.
+- playwright
+- context7
+- pulsemcp

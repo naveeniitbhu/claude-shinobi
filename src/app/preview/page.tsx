@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card/Card";
 import Icon from "@/components/ui/Icon/Icon";
 import Modal from "@/components/ui/Modal/Modal";
 import Alert from "@/components/ui/Alert/Alert";
+import Badge from "@/components/ui/Badge/Badge";
 import { Star, Rocket, Gem, Target, Zap, Check, AlertTriangle, Flame, Home, Settings, ThumbsUp, Bell, Trash2, FileText, Camera, Paperclip, BarChart3, Link2, Circle } from "lucide-react";
 
 export default function Preview() {
@@ -551,6 +552,87 @@ export default function Preview() {
               Reset dismissed alerts
             </button>
           )}
+        </div>
+      </section>
+
+      <section style={{ marginTop: '3rem' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Badge Component</h2>
+        <p style={{ marginBottom: '1.5rem', maxWidth: '500px' }}>
+          Circular notification badges for displaying counts with variant colours and size options.
+        </p>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Variants</h3>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={5} variant="primary" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Primary</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={12} variant="secondary" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Secondary</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={3} variant="success" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Success</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={99} variant="danger" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Danger</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={7} variant="warning" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Warning</p>
+          </div>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Sizes</h3>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={4} size="sm" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Small</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={4} size="md" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Medium</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={4} size="lg" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Large</p>
+          </div>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Overflow &amp; Disabled</h3>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={150} variant="danger" />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Capped at 99+</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <Badge count={8} variant="primary" disabled />
+            <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', color: 'var(--muted)' }}>Disabled</p>
+          </div>
+        </div>
+
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Practical Example</h3>
+        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', padding: '1rem', backgroundColor: 'var(--surface)', borderRadius: '0.5rem', flexWrap: 'wrap' }}>
+          <div style={{ position: 'relative', display: 'inline-flex' }}>
+            <Bell size={28} style={{ color: 'var(--foreground)' }} />
+            <span style={{ position: 'absolute', top: '-8px', right: '-10px' }}>
+              <Badge count={3} variant="danger" size="sm" />
+            </span>
+          </div>
+          <div style={{ position: 'relative', display: 'inline-flex' }}>
+            <Settings size={28} style={{ color: 'var(--foreground)' }} />
+            <span style={{ position: 'absolute', top: '-8px', right: '-10px' }}>
+              <Badge count={24} variant="primary" size="sm" />
+            </span>
+          </div>
+          <div style={{ position: 'relative', display: 'inline-flex' }}>
+            <FileText size={28} style={{ color: 'var(--foreground)' }} />
+            <span style={{ position: 'absolute', top: '-8px', right: '-10px' }}>
+              <Badge count={200} variant="warning" size="sm" />
+            </span>
+          </div>
         </div>
       </section>
 
