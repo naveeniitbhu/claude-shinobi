@@ -1,0 +1,417 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Shinobi" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - heading "Shinobi" [level=1] [ref=e5]
+      - navigation [ref=e6]:
+        - link "Blog" [ref=e7] [cursor=pointer]:
+          - /url: /blog
+        - link "Preview" [ref=e8] [cursor=pointer]:
+          - /url: /preview
+        - link "About" [ref=e9] [cursor=pointer]:
+          - /url: /about
+    - button "Switch to dark mode" [ref=e10] [cursor=pointer]:
+      - img [ref=e11]
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - heading "Typography & Theme Showcase" [level=1] [ref=e15]
+      - paragraph [ref=e16]: This page demonstrates our custom theme with beautiful typography pairing. Headings use the elegant Playfair Display serif font, while body text uses the clean and modern Rubik sans-serif font.
+    - generic [ref=e17]:
+      - heading "Design System Colors" [level=2] [ref=e18]
+      - paragraph [ref=e19]: Our theme features a purple primary color with carefully chosen complementary colors for success, warning, and danger states. The system automatically adapts between light and dark modes.
+    - generic [ref=e20]:
+      - heading "Interactive Components" [level=2] [ref=e21]
+      - paragraph [ref=e22]: Our button components showcase the theme colors in action with hover effects and focus states.
+      - generic [ref=e23]:
+        - button "Primary Button" [ref=e24] [cursor=pointer]
+        - button "Secondary Button" [ref=e25] [cursor=pointer]
+        - button "Success Button" [ref=e26] [cursor=pointer]
+        - button "Warning Button" [ref=e27] [cursor=pointer]
+        - button "Danger Button" [ref=e28] [cursor=pointer]
+      - heading "Disabled States" [level=3] [ref=e29]
+      - paragraph [ref=e30]: All button variants maintain consistent styling when disabled, with reduced opacity for clear visual feedback.
+      - generic [ref=e31]:
+        - button "Primary Disabled" [disabled] [ref=e32]
+        - button "Secondary Disabled" [disabled] [ref=e33]
+        - button "Success Disabled" [disabled] [ref=e34]
+        - button "Warning Disabled" [disabled] [ref=e35]
+        - button "Danger Disabled" [disabled] [ref=e36]
+      - heading "Practical Examples" [level=3] [ref=e37]
+      - paragraph [ref=e38]: Real-world button implementations showing different types and interactive behaviors.
+      - generic [ref=e39]:
+        - button "Submit Form" [ref=e40] [cursor=pointer]
+        - button "Reset Form" [ref=e41] [cursor=pointer]
+        - button "Save Changes" [ref=e42] [cursor=pointer]
+        - button "Proceed with Caution" [ref=e43] [cursor=pointer]
+        - button "Delete Account" [ref=e44] [cursor=pointer]
+    - generic [ref=e45]:
+      - heading "Avatar Component" [level=2] [ref=e46]
+      - paragraph [ref=e47]: Display user initials with customizable sizes and color variants for profiles and user identification.
+      - heading "Sizes" [level=3] [ref=e48]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: J
+          - paragraph [ref=e52]: Small
+        - generic [ref=e53]:
+          - generic [ref=e54]: J
+          - paragraph [ref=e55]: Medium
+        - generic [ref=e56]:
+          - generic [ref=e57]: B
+          - paragraph [ref=e58]: Large
+        - generic [ref=e59]:
+          - generic [ref=e60]: A
+          - paragraph [ref=e61]: X-Large
+      - heading "Color Variants" [level=3] [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: P
+          - paragraph [ref=e66]: Primary
+        - generic [ref=e67]:
+          - generic [ref=e68]: S
+          - paragraph [ref=e69]: Secondary
+        - generic [ref=e70]:
+          - generic [ref=e71]: S
+          - paragraph [ref=e72]: Success
+        - generic [ref=e73]:
+          - generic [ref=e74]: G
+          - paragraph [ref=e75]: Gradient
+      - heading "Practical Examples" [level=3] [ref=e76]
+      - generic [ref=e77]:
+        - heading "User Profile" [level=4] [ref=e78]
+        - generic [ref=e79]:
+          - generic [ref=e80]: S
+          - generic [ref=e81]:
+            - heading "Sarah Connor" [level=5] [ref=e82]
+            - paragraph [ref=e83]: Software Engineer
+            - paragraph [ref=e84]: sarah.connor@example.com
+      - generic [ref=e85]:
+        - heading "Comment Thread" [level=4] [ref=e86]
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]: M
+            - generic [ref=e90]:
+              - heading "Mike Ross" [level=6] [ref=e91]
+              - paragraph [ref=e92]: Great article! Really helpful insights.
+          - generic [ref=e93]:
+            - generic [ref=e94]: R
+            - generic [ref=e95]:
+              - heading "Rachel Green" [level=6] [ref=e96]
+              - paragraph [ref=e97]: Thanks for sharing this. The examples were very clear.
+      - generic [ref=e98]:
+        - heading "Team Members" [level=4] [ref=e99]
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e103]: A
+            - generic [ref=e105]: J
+            - generic [ref=e107]: T
+            - generic [ref=e109]: M
+          - generic [ref=e110]: "+3"
+    - generic [ref=e111]:
+      - heading "Card Component" [level=2] [ref=e112]
+      - paragraph [ref=e113]: Flexible card containers with different variants, sizes, and interactive states.
+      - heading "Variants" [level=3] [ref=e114]
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - heading "Primary Card" [level=4] [ref=e117]
+          - paragraph [ref=e118]: This is a primary variant card with purple accent.
+        - generic [ref=e119]:
+          - heading "Secondary Card" [level=4] [ref=e120]
+          - paragraph [ref=e121]: Secondary variant for less prominent content.
+        - generic [ref=e122]:
+          - heading "Success Card" [level=4] [ref=e123]
+          - paragraph [ref=e124]: Green variant for positive feedback.
+        - generic [ref=e125]:
+          - heading "Warning Card" [level=4] [ref=e126]
+          - paragraph [ref=e127]: Orange variant for caution messages.
+        - generic [ref=e128]:
+          - heading "Danger Card" [level=4] [ref=e129]
+          - paragraph [ref=e130]: Red variant for critical information.
+      - heading "Sizes" [level=3] [ref=e131]
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - heading "Small" [level=4] [ref=e134]
+          - paragraph [ref=e135]: Compact card
+        - generic [ref=e136]:
+          - heading "Medium" [level=4] [ref=e137]
+          - paragraph [ref=e138]: Default size card
+        - generic [ref=e139]:
+          - heading "Large" [level=4] [ref=e140]
+          - paragraph [ref=e141]: Spacious card with more padding
+      - heading "Interactive Cards" [level=3] [ref=e142]
+      - generic [ref=e143]:
+        - button "Clickable Card Click me to see interaction!" [ref=e144] [cursor=pointer]:
+          - heading "Clickable Card" [level=4] [ref=e145]
+          - paragraph [ref=e146]: Click me to see interaction!
+        - button "Disabled Card This card is disabled and won't respond to clicks." [disabled] [ref=e147]:
+          - heading "Disabled Card" [level=4] [ref=e148]
+          - paragraph [ref=e149]: This card is disabled and won't respond to clicks.
+      - heading "Practical Examples" [level=3] [ref=e150]
+      - generic [ref=e151]:
+        - heading "Feature Cards" [level=4] [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e155]:
+            - generic [ref=e156]: 🚀
+            - heading "Fast Performance" [level=5] [ref=e157]
+            - paragraph [ref=e158]: Lightning-fast loading with optimized code and modern frameworks.
+          - generic [ref=e160]:
+            - generic [ref=e161]: 🔒
+            - heading "Secure by Default" [level=5] [ref=e162]
+            - paragraph [ref=e163]: Built-in security features and best practices for peace of mind.
+          - generic [ref=e165]:
+            - generic [ref=e166]: 🎨
+            - heading "Beautiful Design" [level=5] [ref=e167]
+            - paragraph [ref=e168]: Carefully crafted components with attention to detail.
+    - generic [ref=e169]:
+      - heading "Icon Component" [level=2] [ref=e170]
+      - paragraph [ref=e171]: Circular icons with different variants and sizes for displaying symbols and actions.
+      - heading "Sizes" [level=3] [ref=e172]
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - img [ref=e176] [cursor=pointer]
+          - paragraph [ref=e178]: Small
+        - generic [ref=e179]:
+          - img [ref=e181] [cursor=pointer]
+          - paragraph [ref=e186]: Medium
+        - generic [ref=e187]:
+          - img [ref=e189] [cursor=pointer]
+          - paragraph [ref=e192]: Large
+      - heading "Variants" [level=3] [ref=e193]
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - img [ref=e197] [cursor=pointer]
+          - paragraph [ref=e201]: Primary
+        - generic [ref=e202]:
+          - img [ref=e204] [cursor=pointer]
+          - paragraph [ref=e206]: Secondary
+        - generic [ref=e207]:
+          - img [ref=e209] [cursor=pointer]
+          - paragraph [ref=e211]: Success
+        - generic [ref=e212]:
+          - img [ref=e214] [cursor=pointer]
+          - paragraph [ref=e216]: Warning
+        - generic [ref=e217]:
+          - img [ref=e219] [cursor=pointer]
+          - paragraph [ref=e221]: Danger
+      - heading "Interactive Icons" [level=3] [ref=e222]
+      - generic [ref=e223]:
+        - img [ref=e225] [cursor=pointer]
+        - img [ref=e229] [cursor=pointer]
+        - img [ref=e233] [cursor=pointer]
+        - img [ref=e236] [cursor=pointer]
+        - img [ref=e240] [cursor=pointer]
+      - heading "Practical Examples" [level=3] [ref=e243]
+      - generic [ref=e244]:
+        - heading "Action Bar" [level=4] [ref=e245]
+        - generic [ref=e246]:
+          - img [ref=e248] [cursor=pointer]
+          - img [ref=e252] [cursor=pointer]
+          - img [ref=e256] [cursor=pointer]
+          - img [ref=e259] [cursor=pointer]
+          - img [ref=e262] [cursor=pointer]
+      - generic [ref=e265]:
+        - heading "Status Indicators" [level=4] [ref=e266]
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - img [ref=e270] [cursor=pointer]
+            - generic [ref=e272]: Online
+          - generic [ref=e273]:
+            - img [ref=e275] [cursor=pointer]
+            - generic [ref=e277]: Away
+          - generic [ref=e278]:
+            - img [ref=e280] [cursor=pointer]
+            - generic [ref=e282]: Busy
+          - generic [ref=e283]:
+            - img [ref=e285] [cursor=pointer]
+            - generic [ref=e287]: Offline
+    - generic [ref=e288]:
+      - heading "Modal Component" [level=2] [ref=e289]
+      - paragraph [ref=e290]: Clean, modern modal with semi-transparent backdrop, keyboard navigation, and multiple variants.
+      - heading "Variants" [level=3] [ref=e291]
+      - generic [ref=e292]:
+        - button "Primary Modal" [ref=e293] [cursor=pointer]
+        - button "Secondary Modal" [ref=e294] [cursor=pointer]
+        - button "Success Modal" [ref=e295] [cursor=pointer]
+        - button "Warning Modal" [ref=e296] [cursor=pointer]
+        - button "Danger Modal" [ref=e297] [cursor=pointer]
+      - heading "Sizes" [level=3] [ref=e298]
+      - generic [ref=e299]:
+        - button "Small Modal" [ref=e300] [cursor=pointer]
+        - button "Medium Modal" [ref=e301] [cursor=pointer]
+        - button "Large Modal" [ref=e302] [cursor=pointer]
+      - heading "Features" [level=3] [ref=e303]
+      - generic [ref=e304]:
+        - generic [ref=e305]:
+          - heading "✨ Semi-transparent backdrop" [level=4] [ref=e306]
+          - paragraph [ref=e307]: Beautiful blur effect
+        - generic [ref=e308]:
+          - heading "⌨️ Keyboard navigation" [level=4] [ref=e309]
+          - paragraph [ref=e310]: Close with Escape key
+        - generic [ref=e311]:
+          - heading "🎯 Click outside to close" [level=4] [ref=e312]
+          - paragraph [ref=e313]: Intuitive interaction
+        - generic [ref=e314]:
+          - heading "📱 Responsive design" [level=4] [ref=e315]
+          - paragraph [ref=e316]: Works on all screen sizes
+    - generic [ref=e317]:
+      - heading "Alert Component" [level=2] [ref=e318]
+      - paragraph [ref=e319]: Informational banners for feedback messages with optional titles and dismiss functionality.
+      - heading "Variants" [level=3] [ref=e320]
+      - generic [ref=e321]:
+        - alert [ref=e322]:
+          - generic [ref=e324]:
+            - text: This is a
+            - strong [ref=e325]: primary
+            - text: alert — general information.
+        - alert [ref=e326]:
+          - generic [ref=e328]:
+            - text: This is a
+            - strong [ref=e329]: secondary
+            - text: alert — neutral message.
+        - alert [ref=e330]:
+          - generic [ref=e332]:
+            - text: This is a
+            - strong [ref=e333]: success
+            - text: alert — action completed.
+        - alert [ref=e334]:
+          - generic [ref=e336]:
+            - text: This is a
+            - strong [ref=e337]: warning
+            - text: alert — proceed with caution.
+        - alert [ref=e338]:
+          - generic [ref=e340]:
+            - text: This is a
+            - strong [ref=e341]: danger
+            - text: alert — critical issue.
+      - heading "With Titles" [level=3] [ref=e342]
+      - generic [ref=e343]:
+        - alert [ref=e344]:
+          - generic [ref=e345]:
+            - generic [ref=e346]: Success
+            - generic [ref=e347]: Your changes have been saved successfully.
+        - alert [ref=e348]:
+          - generic [ref=e349]:
+            - generic [ref=e350]: Warning
+            - generic [ref=e351]: Your session is about to expire in 5 minutes.
+        - alert [ref=e352]:
+          - generic [ref=e353]:
+            - generic [ref=e354]: Error
+            - generic [ref=e355]: Failed to connect to the server. Please try again.
+      - heading "Sizes" [level=3] [ref=e356]
+      - generic [ref=e357]:
+        - alert [ref=e358]:
+          - generic [ref=e360]: Small alert — compact for tight spaces.
+        - alert [ref=e361]:
+          - generic [ref=e363]: Medium alert — default size for most use cases.
+        - alert [ref=e364]:
+          - generic [ref=e366]: Large alert — prominent for important messages.
+      - heading "Dismissible" [level=3] [ref=e367]
+      - generic [ref=e368]:
+        - alert [ref=e369]:
+          - generic [ref=e370]:
+            - generic [ref=e371]: Primary
+            - generic [ref=e372]: This dismissible primary alert can be closed.
+          - button "Dismiss alert" [ref=e373] [cursor=pointer]: ✕
+        - alert [ref=e374]:
+          - generic [ref=e375]:
+            - generic [ref=e376]: Success
+            - generic [ref=e377]: This dismissible success alert can be closed.
+          - button "Dismiss alert" [ref=e378] [cursor=pointer]: ✕
+        - alert [ref=e379]:
+          - generic [ref=e380]:
+            - generic [ref=e381]: Warning
+            - generic [ref=e382]: This dismissible warning alert can be closed.
+          - button "Dismiss alert" [ref=e383] [cursor=pointer]: ✕
+        - alert [ref=e384]:
+          - generic [ref=e385]:
+            - generic [ref=e386]: Danger
+            - generic [ref=e387]: This dismissible danger alert can be closed.
+          - button "Dismiss alert" [ref=e388] [cursor=pointer]: ✕
+    - generic [ref=e389]:
+      - heading "Badge Component" [level=2] [ref=e390]
+      - paragraph [ref=e391]: Circular notification badges for displaying counts with variant colours and size options.
+      - heading "Variants" [level=3] [ref=e392]
+      - generic [ref=e393]:
+        - generic [ref=e394]:
+          - generic [ref=e395]: "5"
+          - paragraph [ref=e396]: Primary
+        - generic [ref=e397]:
+          - generic [ref=e398]: "12"
+          - paragraph [ref=e399]: Secondary
+        - generic [ref=e400]:
+          - generic [ref=e401]: "3"
+          - paragraph [ref=e402]: Success
+        - generic [ref=e403]:
+          - generic [ref=e404]: "99"
+          - paragraph [ref=e405]: Danger
+        - generic [ref=e406]:
+          - generic [ref=e407]: "7"
+          - paragraph [ref=e408]: Warning
+      - heading "Sizes" [level=3] [ref=e409]
+      - generic [ref=e410]:
+        - generic [ref=e411]:
+          - generic [ref=e412]: "4"
+          - paragraph [ref=e413]: Small
+        - generic [ref=e414]:
+          - generic [ref=e415]: "4"
+          - paragraph [ref=e416]: Medium
+        - generic [ref=e417]:
+          - generic [ref=e418]: "4"
+          - paragraph [ref=e419]: Large
+      - heading "Overflow & Disabled" [level=3] [ref=e420]
+      - generic [ref=e421]:
+        - generic [ref=e422]:
+          - generic [ref=e423]: 99+
+          - paragraph [ref=e424]: Capped at 99+
+        - generic [ref=e425]:
+          - generic [ref=e426]: "8"
+          - paragraph [ref=e427]: Disabled
+      - heading "Practical Example" [level=3] [ref=e428]
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - img [ref=e431]
+          - generic [ref=e435]: "3"
+        - generic [ref=e436]:
+          - img [ref=e437]
+          - generic [ref=e441]: "24"
+        - generic [ref=e442]:
+          - img [ref=e443]
+          - generic [ref=e447]: 99+
+    - generic [ref=e448]:
+      - heading "Toast Component" [level=2] [ref=e449]
+      - paragraph [ref=e450]: Lightweight notifications that appear in the corner of the screen with auto-dismiss and multiple variants.
+      - heading "Variants" [level=3] [ref=e451]
+      - generic [ref=e452]:
+        - button "Primary Toast" [ref=e453] [cursor=pointer]
+        - button "Secondary Toast" [ref=e454] [cursor=pointer]
+        - button "Success Toast" [ref=e455] [cursor=pointer]
+        - button "Danger Toast" [active] [ref=e456] [cursor=pointer]
+        - button "Warning Toast" [ref=e457] [cursor=pointer]
+      - heading "Sizes" [level=3] [ref=e458]
+      - generic [ref=e459]:
+        - button "Small" [ref=e460] [cursor=pointer]
+        - button "Medium" [ref=e461] [cursor=pointer]
+        - button "Large" [ref=e462] [cursor=pointer]
+      - heading "Without Title" [level=3] [ref=e463]
+      - generic [ref=e464]:
+        - button "Success (no title)" [ref=e465] [cursor=pointer]
+        - button "Danger (no title)" [ref=e466] [cursor=pointer]
+        - button "Warning (no title)" [ref=e467] [cursor=pointer]
+    - alert [ref=e487]:
+      - img [ref=e489]
+      - generic [ref=e493]:
+        - generic [ref=e494]: Error
+        - generic [ref=e495]: Something went wrong. Please try again.
+      - button "Dismiss notification" [ref=e496] [cursor=pointer]:
+        - img [ref=e497]
+    - generic [ref=e468]:
+      - heading "Typography Hierarchy" [level=2] [ref=e469]
+      - generic [ref=e470]:
+        - heading "Main Heading (H1)" [level=1] [ref=e471]
+        - heading "Section Heading (H2)" [level=2] [ref=e472]
+        - heading "Subsection Heading (H3)" [level=3] [ref=e473]
+        - paragraph [ref=e474]: This is regular paragraph text using Rubik. It's clean, readable, and pairs beautifully with the Playfair Display headings. The contrast between the geometric sans-serif and elegant serif creates visual interest while maintaining excellent readability.
+        - paragraph [ref=e475]: This is smaller text in muted color, perfect for captions or secondary information.
+  - button "Open Next.js Dev Tools" [ref=e481] [cursor=pointer]:
+    - img [ref=e482]
+  - alert [ref=e485]

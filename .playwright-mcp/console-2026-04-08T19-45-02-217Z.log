@@ -1,0 +1,9 @@
+[    2219ms] [ERROR] Iris is not supported @ https://netninja.dev/:264
+[    2664ms] [WARNING] [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page. @ https://netninja.dev/:264
+[    3114ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://netninja.dev/api/v2/pricing_plans/bnpl_product_data.json?&#1775677504442:0
+[    3464ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ https://fedora.teachablecdn.com/packs/pages--038767b4be60e0869d3d.js:776
+[    4798ms] [WARNING] <link rel=preload> must have a valid `as` value @ https://player.hotmart.com/embed/DZmWnKDzqz?metadata=%5B%7B%22key%22%3A%22page_id%22%2C%22value%22%3A%2215899977%22%7D%5D:0
+[    6590ms] [INFO] Using video.js 7.15.7 @ https://static-embed.play.hotmart.com/embed/v4/_next/static/chunks/pages/_app-9617470f72b222ef.js:14
+[    7239ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://netninja.dev/:0
+[   11747ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://player.hotmart.com/embed/DZmWnKDzqz?metadata=%5B%7B%22key%22%3A%22page_id%22%2C%22value%22%3A%2215899977%22%7D%5D:0
+[   20677ms] [WARNING] The resource https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://player.hotmart.com/embed/DZmWnKDzqz?metadata=%5B%7B%22key%22%3A%22page_id%22%2C%22value%22%3A%2215899977%22%7D%5D:0
