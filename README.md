@@ -86,7 +86,12 @@ Esc twice - choose from prev sessions
 /rename - rename a session
 claude --resume auth-refactor
 
+claude --worktree feature/a....
+git worktree add ui-updates
+git worktree remove ui-updates
 ! bash mode
+
+- worktree : checking out multiple branches at a time
 
 ### MCP Servers
 
