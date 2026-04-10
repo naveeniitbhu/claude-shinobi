@@ -78,10 +78,21 @@ Esc twice - choose from prev sessions
 
 1. Can you make a avatar like component(no pic, only initials) and find any places in the project where it can replace avatar like template?
 
+/agents
+
+1. Expert UI & UX engineer who reviews the UI & UX of React components in a browser using Playwright, takes screenshots, then offers feedback on how to improve the component in terms of visual design, user experience and accessibility.
+
+/install-github
+/rename - rename a session
+claude --resume auth-refactor
+
+! bash mode
+
 ### MCP Servers
 
 MCP servers help AI model connect to external sources.
 For example: Supabase MCP would allow Claude to read blogs table in supabase, make an interface to model the records. The supabase server would provide the ability to claude to call those tools.
+
 - playwright
 - context7
 - pulsemcp
